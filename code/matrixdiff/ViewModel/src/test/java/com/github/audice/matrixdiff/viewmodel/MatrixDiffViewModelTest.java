@@ -73,7 +73,7 @@ public class MatrixDiffViewModelTest {
     }
 
     @Test
-    public void canGetResultOfCalculateNewArrayOfElements() {
+    public void canGetResultOfCalculateOfElements() {
         viewModel.setSizeOfMatrix("3");
         viewModel.fillStringImgMatrixConvertToArray("{1,2,3,4,5,6,7,8,9}");
         viewModel.calculateMatrixDiff();
