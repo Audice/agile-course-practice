@@ -194,7 +194,7 @@ public class MatrixDiffViewModelTest {
     }
 
     @Test
-    public void whenFillMatrixIsDoublBad() {
+    public void whenFillMatrixIsDoubleBad() {
         viewModel.setSizeOfMatrix("3");
         assertFalse(viewModel.fillStringImgMatrixConvertToArray("{1,2,3,4,5,,,8,9}"));
     }
