@@ -70,4 +70,18 @@ public class CalculateDeterminantOfMatrixWithMatrixPropertyTest {
         squareMatrix = new SquareMatrix(dimension, testArray);
         assertEquals(0f, squareMatrix.determinant(), delta);
     }
+
+    @Test
+    public void canConvertToStringCurrentMatrix() {
+        SquareMatrix squareMatrix;
+        squareMatrix = new SquareMatrix(dimension, testArray);
+        assertNotEquals("", squareMatrix.toString());
+    }
+
+    @Test
+    public void cantConvertToStringCurrentMatrix() {
+        SquareMatrix squareMatrix;
+        squareMatrix = new SquareMatrix(0, testArray);
+        assertNull(squareMatrix.toString());
+    }
 }
